@@ -1,0 +1,99 @@
+{
+    "mcpServers": {
+      "tool_greeting": {
+        "command": "uv",
+        "args": [
+          "--directory",
+          "C:\\Users\\daniel.hwang\\study\\ml\\mcp\\sandbox",
+          "run",
+          "tool_greeting.py"
+        ]
+      },
+      "tool_disk": {
+        "command": "uv",
+        "args": [
+          "--directory",
+          "C:\\Users\\daniel.hwang\\study\\ml\\mcp\\sandbox",
+          "run",
+          "tool_disk.py"
+        ]
+      },
+      "filesystem": {
+        "command": "docker",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "--mount", "type=bind,src=c:\\workspace,dst=/projects/workspace",
+          "--mount", "type=bind,src=c:\\workspace2\\test,dst=/projects/workspace2/test,ro",
+          "--mount", "type=bind,src=c:\\workspace2\\test.xlsx,dst=/projects/workspace2/test.xlsx",
+          "mcp/filesystem",
+          "/projects"
+        ]
+      },
+      "tool_excel": {
+        "command": "uv",
+        "args": [
+          "--directory",
+          "C:\\Users\\daniel.hwang\\study\\ml\\mcp\\sandbox",
+          "run",
+          "tool_excel.py"
+        ]
+      },
+      "tool_keyboard": {
+        "command": "uv",
+        "args": [
+          "--directory",
+          "C:\\Users\\daniel.hwang\\study\\ml\\mcp\\sandbox",
+          "run",
+          "tool_keyboard.py"
+        ]
+      },
+      "tool_hwp": {
+        "command": "uv",
+        "args": [
+          "--directory",
+          "C:\\Users\\daniel.hwang\\study\\ml\\mcp\\sandbox",
+          "run",
+          "tool_hwp.py"
+        ]
+      },
+      "prompts": {
+        "command": "uv",
+        "args": [
+          "--directory",
+          "C:\\Users\\daniel.hwang\\study\\ml\\mcp\\sandbox",
+          "run",
+          "prompts.py"
+        ]
+      },
+      "agent_state": {
+        "command": "uv",
+        "args": [
+          "--directory",
+          "C:\\Users\\daniel.hwang\\study\\ml\\mcp\\sandbox",
+          "run",
+          "resource_agent.py"
+        ]
+      },
+      "postgres": {
+        "command": "npx",
+        "args": [
+            "-y",
+            "@modelcontextprotocol/server-postgres",
+            "postgresql://your_db_user:your_db_password@localhost:5432/your_db_name"
+        ]
+      },
+      "Demo": {
+        "command": "uv",
+        "args": [
+          "run",
+          "--with",
+          "mcp[cli]",
+          "mcp",
+          "run",
+          "C:\\Users\\daniel.hwang\\study\\ml\\mcp\\sandbox\\tool_math.py"
+        ]
+      }
+    }
+  }

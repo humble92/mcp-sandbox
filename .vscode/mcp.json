@@ -1,0 +1,12 @@
+{
+    "servers": {
+        "postgres": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-postgres",
+                "postgresql://your_db_user:your_db_password@localhost:5432/your_db_name"
+            ]
+        }
+    }
+}
