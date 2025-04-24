@@ -7,7 +7,8 @@ from mcp.server.fastmcp import FastMCP
 # MCP server
 mcp = FastMCP(name="tool_disk", host="127.0.0.1", port=5001, timeout=30)
  
-BASE_DIR = "c:/workspace/test"
+import os
+BASE_DIR = os.environ.get("BASE_DIR", "c:/workspace/test")
 
 # Folder creation tool
 @mcp.tool()

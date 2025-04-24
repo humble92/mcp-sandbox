@@ -64,6 +64,7 @@ Replace `tool_greeting.py` with the script name of the server you want to run. T
 * (cf) https://github.com/settings/copilot
 
 ## Use cases of 3rd parties
+* https://gitmcp.io (Instantly create a Remote MCP server for any GitHub repository)
 * https://github.com/elevenlabs/elevenlabs-mcp/tree/main (elevenlabs)
 * https://docs.windsurf.com/windsurf/mcp
 * https://www.youtube.com/watch?v=dutyOc_cAEU (VS code)
@@ -72,3 +73,10 @@ Replace `tool_greeting.py` with the script name of the server you want to run. T
 ## Other references
 * https://modelcontextprotocol.io/quickstart/server
 * https://www.books.weniv.co.kr/basecamp-mcp
+* https://modelcontextprotocol.io/clients (Feature support matrix)
+* https://www.youtube.com/watch?v=EswVjHZMn74
+
+## Roadmap:
+* https://modelcontextprotocol.io/development/roadmap
+* OAuth Authentication (not API keys)
+* MCP registry

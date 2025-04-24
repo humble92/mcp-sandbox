@@ -3,7 +3,8 @@ from mcp.server.fastmcp import FastMCP
 # MCP server
 mcp = FastMCP(name="tool_excel", host="127.0.0.1", port=5003, timeout=30)
  
-BASE_DIR = "c:/workspace/test"
+import os
+BASE_DIR = os.environ.get("BASE_DIR", "c:/workspace/test")
 
 # Organize the table input by Excel writer
 @mcp.tool()

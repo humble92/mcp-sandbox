@@ -3,7 +3,8 @@ from mcp.server.fastmcp import FastMCP
 # MCP server
 mcp = FastMCP(name="tool_hwp", host="127.0.0.1", port=5011, timeout=30)
   
-BASE_DIR = "c:/workspace/test"
+import os
+BASE_DIR = os.environ.get("BASE_DIR", "c:/workspace/test")
 
 # Read Hangul document
 @mcp.tool()
