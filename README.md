@@ -50,11 +50,15 @@ Replace `tool_greeting.py` with the script name of the server you want to run. T
 ## MCP SDK
 * https://github.com/modelcontextprotocol
 * https://github.com/modelcontextprotocol/swift-sdk
+* https://pypi.org/project/mcp/ (python)
 
 ## MCP server repos
 * https://github.com/modelcontextprotocol/servers/tree/main
 * https://mcp.so
 * https://smithery.ai
+* https://www.pulsemcp.com
+* https://www.npmjs.com/search?q=mcp
+* https://cursor.directory/mcp
 
 ## MCP framework or extentions.
 * https://fast-agent.ai (fast-agent - MCP native Agents and Workflows)
